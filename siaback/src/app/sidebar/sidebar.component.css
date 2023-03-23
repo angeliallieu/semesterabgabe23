@@ -1,0 +1,29 @@
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    
+}
+
+li {
+    display: block;
+    color: white;
+    font-size: x-large ;
+    font: bolder;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li:hover {
+    background-color: lightgrey;
+    color: white;
+}
+
+
+.nav-link{ color: white;}
+
+
+
+  

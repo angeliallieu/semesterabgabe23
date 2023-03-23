@@ -1,0 +1,38 @@
+* {
+  font-family: 'Gill Sans', 'Gll Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+
+#page {
+  display: grid;
+  margin: 0px;
+  /* height: 100%; */
+  height: 100vh;
+  grid-template-areas:
+    "nav nav"
+    "sidebar  home"
+    "sidebar  home";
+  grid-template-rows: 80px 1fr;
+  grid-template-columns: 220px 1fr;
+}
+
+#nav {
+  padding: 10px;
+  grid-area: nav;
+  background-color: #09123f;
+}
+
+#sidebar {
+  padding: 15px;
+  grid-area: sidebar;
+  background-color:#09123f;
+}
+
+#home {
+  padding: 20px;
+  grid-area: home;
+  background-color: #09123f;
+}
+
+
+  

@@ -1,0 +1,67 @@
+  <!-- <div class="container mt-3">
+    <h3 class="m-3">All Songs</h3>
+    <div class="table-responsive">
+      <table class="m-3 table table-striped table-hover">
+        <caption>Alle Songs<code>song</code></caption>
+        <thead>
+          <tr>
+            <th scope="col ">Id</th>
+            <th scope="col ">Title</th>
+            <th scope="col ">Length</th>
+            <th scope="col ">Album</th>
+            <th scope="col ">Artist</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let songs of song; let i=index">
+            <td>{{ i+1 }}</td>
+            <td>{{ songs.title }}</td>
+            <td>{{ songs.slength }}</td>
+            <td>{{ songs.album }}</td>
+            <td>{{ songs.artist }}</td>
+            
+
+            <td>
+              <a [href]="'mailto:' + member.email"><span class="bi bi-envelope px-5"></span></a> 
+              <a [routerLink]="['/songs', songs._id]"> <span class=" bi bi-pencil-square px-5 "></span></a>
+              <span (click)="delete(songs._id)" class=" bi bi-trash px-5 "></span>
+            </td>
+          </tr>
+        </tbody>
+  
+      </table>
+    </div>
+  </div> -->
+
+
+
+<div class="card-colums">
+    <div class="container d-flex flex-wrap align-center "> 
+            <div class="card" style="width:350px" *ngFor="let songs of song; let i=index; let s = '../'">
+                <!-- JavaScript code -->
+                <img class="card-img-bottom" src= "../{{songs.simage}}"   alt="Card image" style="width:100%">                
+                <div class="card-body">
+                  <h4 class="card-title">{{songs.title}}</h4>
+                  <p class="card-text" style= "font-weight: bold;">{{songs.artist}} </p>
+                  <p class="card-text">{{songs.album}}</p>
+                  <p class="card-text">{{songs.slength}} min <span (click)="delete(songs._id)" class=" bi bi-trash px-5 "></span>
+                  </p> 
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+<!-- <div class="card-colums">
+    <div class="container d-flex flex-wrap ">
+
+        <div class="card" style="width:350px">
+        
+        <img class="card-img-bottom" src="../assets/cover/AyraStarr.jpg" alt="Card image" style="width:100%">
+        <div class="card-body">
+          <h4 class="card-title">songs.title</h4>
+          <p class="card-text">songs.artist</p>
+          
+          <span class=" bi bi-pencil-square px-5 "></span>
+          <a href="#" class="btn btn-primary">See Profile</a>
+        </div> -->
