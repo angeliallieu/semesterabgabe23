@@ -11,6 +11,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { HttpClientModule } from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { CreateComponent } from './create/create.component'
+import { ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = []
 
@@ -27,6 +28,7 @@ const routes: Routes = []
     AppRoutingModule, RouterModule.forRoot(routes),
     BrowserAnimationsModule,
     HttpClientModule,
+    ReactiveFormsModule
 
   ],
   providers: [],
