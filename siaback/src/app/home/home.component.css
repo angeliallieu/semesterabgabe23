@@ -7,13 +7,14 @@ background-color: #09123f;
 color: azure;
 }
 
-.card-colums{
-    column-count: 4; 
+.card-columns{
+    column-count: 4 ;  
     column-gap: 1.25 rem; 
+  
 }
 
 .card {
-    break-inside: avoid-column; 
+    break-inside: avoid-column;
   }
 
   .card-body {

@@ -20,34 +20,43 @@
 
       <legend  class="mb-1 h2" > Neuen Song hinzufügen </legend>
       <div class="form-group">
-        <div class="mb-1 row">
-          <label class="col-2 col-form-label " >Songtitel</label>
-          <div class="col-10">
-            <input type="text" class="col-7 form-control" id="songtitel" />
+        <form #songsForm="ngForm" (ngSubmit) = "onNewSong(songsForm.value)"  >
+          <div class="mb-1 row">
+            <label class="col-2 col-form-label " >Songtitel</label>
+            <div class="col-10">
+              <input type="text" class="col-7 form-control" id="songtitel" name="title" ngModel />
+            </div>
           </div>
-        </div>
-        <div class="mb-1 row">
-          <label class="col-2 col-form-label" >Künstler</label>
-          <div class="col-10">
-            <input type="text" class="col-7 form-control" id="künstler" />
+          <div class="mb-1 row">
+            <label class="col-2 col-form-label" >Künstler</label>
+            <div class="col-10">
+              <input type="text" class="col-7 form-control" id="künstler " name="artist" ngModel />
+            </div>
           </div>
-        </div>
-        <div class="mb-1 row">
-          <label class="col-2 col-form-label" >Liedlänge</label>
-          <div class="col-10">
-            <input type="email" class="col-7 form-control" id="liedlaenge" placeholder="m:ss" />
+          <div class="mb-1 row">
+            <label class="col-2 col-form-label" >Liedlänge</label>
+            <div class="col-10">
+              <input type="email" class="col-7 form-control" id="liedlaenge" placeholder="m:ss" name="slength" ngModel />
+            </div>
           </div>
-        </div>
-        <div class="mb-1 row">
-          <label class="col-2 col-form-label" >Albumtitel</label>
-          <div class="col-10">
-            <input type="text" class="col-7 form-control" id="album" />
+          <div class="mb-1 row">
+            <label class="col-2 col-form-label" >Albumtitel</label>
+            <div class="col-10">
+              <input type="text" class="col-7 form-control" id="albumt" name="album" ngModel/>
+            </div>
           </div>
-        </div>
-        <div class="row ">
-          <button type="submit" class="col-3 btn btn-primary font-weight-bold" >Aktualisieren</button>
-          <div class="col-2"></div>
-          <button type="button" class="col-3 btn btn-secondary font-weight-bold" [routerLink]="'/'">Abbrechen</button>
-        </div>
+          <div class="pfad">
+            <label class="col-2 col-form-label" >Pfad</label>
+            <div class="col-10">
+              <input type="text"  class="col-7 form-control" id="image" name="simage" ngModel/>
+            </div>
+          </div>
+          <div class="row ">
+            <button type="submit" class="col-3 btn btn-primary font-weight-bold" >Aktualisieren</button>
+            <div class="col-2"></div>
+            <button type="button" class="col-3 btn btn-secondary font-weight-bold" [routerLink]="'/'">Abbrechen</button>
+          </div>
+        </form>
+      </div>
 
   

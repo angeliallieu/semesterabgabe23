@@ -35,9 +35,9 @@
 
 
 
-<div class="card-colums">
-    <div class="container d-flex flex-wrap align-center "> 
-            <div class="card shadow" style="width:350px" *ngFor="let songs of song; let i=index; let s = '../'">
+<div class="card-columns">
+    <div class="container d-flex flex-wrap align-items-center "> <!--anordnung!-->
+            <div class="card shadow" style="width:350px" *ngFor="let songs of song; let i=index;">
                 <!-- JavaScript code -->
                 <img class="card-img-bottom" src= "../{{songs.simage}}"   alt="Card image" style="width:100%">                
                 <div class="card-body">
@@ -50,6 +50,7 @@
               </div>
             </div>
         </div>
+
 
 
 <!-- <div class="card-colums">
