@@ -13,7 +13,7 @@ export class BackendService {
 
   getAll(): Observable<Song[]>{
     return this.http.get<Song[]>(this.baseUrl); //get()-Funktion wird als Parameter die URL des Backends übergeben
-  //rückgabewert ist ein Observabble -> Song Array
+  //rückgabewert ist ein Observable -> Song Array
   }
 
   postAny(songs:any){
