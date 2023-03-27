@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { CreateComponent } from './create/create.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ArtistsComponent } from './artists/artists.component';
 
 const routes: Routes = []
 
@@ -21,7 +22,8 @@ const routes: Routes = []
     HomeComponent,
     NavComponent,
     SidebarComponent,
-    CreateComponent, //HomeComponent
+    CreateComponent,
+    ArtistsComponent, 
   ],
   imports: [
     BrowserModule,

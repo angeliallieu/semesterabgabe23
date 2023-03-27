@@ -5,6 +5,7 @@ import { CreateComponent } from './create/create.component';
 // import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 // import { SidebarComponent } from './sidebar/sidebar.component';
+import { ArtistsComponent } from './artists/artists.component';
 
 const routes: Routes = [{
   path: "",
@@ -15,6 +16,12 @@ const routes: Routes = [{
   path: "songs",
   component: CreateComponent
 },
+{
+path: "artists",
+component: ArtistsComponent
+},
+
+
 // {
 //   path: "member/:id",
 //   component: DetailComponent
