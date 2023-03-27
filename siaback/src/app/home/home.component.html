@@ -34,7 +34,7 @@
   </div> -->
 
 
-
+<div *ngIf="!deleted" class="container mt-3">
 <div class="card-columns">
     <div class="container d-flex flex-wrap align-items-center "> <!--anordnung!-->
             <div class="card shadow" style="width:350px" *ngFor="let songs of song; let i=index;">
@@ -50,8 +50,7 @@
               </div>
             </div>
         </div>
-
-
+      </div>
 
 <!-- <div class="card-colums">
     <div class="container d-flex flex-wrap ">

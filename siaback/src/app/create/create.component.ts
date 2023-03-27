@@ -16,13 +16,29 @@ export class CreateComponent {
   onNewSong(songs: {title:string, artist:string, slength:string, album:string, simage:string }){
     if (!songs.simage){
       songs.simage = "assets/cover/default.png"
+    }  
+    if (!songs.title){
+      songs.title = "Unbekannt"
     }
+    if (!songs.artist){
+      songs.artist = "Unbekannt"
+    }  
+    if (!songs.album){
+      songs.album = "Unbekannt"
+    }
+    if (!songs.slength){
+      songs.slength = "0:00"
+    }
+
     // console.log(songs);
 
     this.bs.postAny(songs).subscribe((result)=>{
       console.log(result);
     })
-    this.router.navigateByUrl('/');
+    this.router.navigateByUrl('/').then(()=>{
+      location.reload();
+    });
+    
   }
   
 

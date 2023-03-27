@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { BackendService } from '../shared/backend.service';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Song } from '../shared/song';
 
 
@@ -11,8 +12,9 @@ import { Song } from '../shared/song';
 export class HomeComponent //implements OnInit 
 {
   song!: Song[];
+  deleted = false;
 
-  constructor(private bs: BackendService) { } //es findet eine dependencie injection statt
+  constructor(private bs: BackendService , private router: Router) { } //es findet eine dependencie injection statt
 
   ngOnInit(): void {
     this.readAll();
@@ -29,7 +31,31 @@ export class HomeComponent //implements OnInit
             complete: () => console.log('getAll() completed')
           })
   }
+  
   delete(id: string): void {
-    console.log("id :" ,id );
-  } 
+    this.bs.deleteOne(id).subscribe(
+      {
+        next: (response: any) => {
+          console.log('response : ', response);
+          if(response.status == 204){
+                  console.log(response.status);
+                  this.reload(true);
+                } else {
+                  console.log(response.status);
+                  console.log(response.error);
+                  this.reload(false);
+                }
+        },
+        error: (err) => console.log(err),
+        complete: () => console.log('deleteOne() completed')
+    });
+  }
+
+  reload(deleted: boolean)
+  {
+    this.deleted = deleted;
+    this.readAll();
+    this.router.navigateByUrl('/');
+    location.reload();
+  }
 }

@@ -19,7 +19,10 @@ export class BackendService {
   postAny(songs:any){
     return this.http.post<Song>(this.baseUrl, songs);
   }
-
+  
+  deleteOne(id: string): Observable<any>{
+    return this.http.delete<any>(this.baseUrl + '/' + id, {observe: 'response'});
+  } 
 
 // getOne(id: string): Observable<Song>{
 //   return this.http.get<Song>(this.baseUrl + '/' + id);
