@@ -3,7 +3,11 @@
   display: inline-flex;
   float: right;
 } */
-
+.navbar{
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
 .nav-wrapper{
   background: #09123f;
 }

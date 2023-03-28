@@ -1,7 +1,8 @@
 @import url('../../../node_modules/bootstrap-icons/font/bootstrap-icons.css');
 
 
-*{padding: 5px;
+*{
+  padding: 5px;
 border: 15 px;
 background-color: #09123f;
 color: azure;
