@@ -6,6 +6,7 @@ import { CreateComponent } from './create/create.component';
 import { HomeComponent } from './home/home.component';
 // import { SidebarComponent } from './sidebar/sidebar.component';
 import { ArtistsComponent } from './artists/artists.component';
+import { AlbenComponent } from './alben/alben.component';
 
 const routes: Routes = [{
   path: "",
@@ -20,12 +21,11 @@ const routes: Routes = [{
 path: "artists",
 component: ArtistsComponent
 },
+{
+path: "alben",
+component: AlbenComponent
+},
 
-
-// {
-//   path: "member/:id",
-//   component: DetailComponent
-// }
 ];
 
 @NgModule({

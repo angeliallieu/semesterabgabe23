@@ -13,6 +13,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { CreateComponent } from './create/create.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ArtistsComponent } from './artists/artists.component';
+import { AlbenComponent } from './alben/alben.component';
 
 const routes: Routes = []
 
@@ -23,7 +24,8 @@ const routes: Routes = []
     NavComponent,
     SidebarComponent,
     CreateComponent,
-    ArtistsComponent, 
+    ArtistsComponent,
+    AlbenComponent, 
   ],
   imports: [
     BrowserModule,
