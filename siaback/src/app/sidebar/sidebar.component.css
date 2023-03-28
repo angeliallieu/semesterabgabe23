@@ -3,7 +3,6 @@ ol {
     margin: 0;
     padding: 0;
     width: 200px;
-    
 }
 
 li {
@@ -24,6 +23,6 @@ li:hover {
 
 .nav-link{ color: white;}
 
-
+.fixed{}
 
   

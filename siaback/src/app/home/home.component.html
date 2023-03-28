@@ -34,11 +34,25 @@
   </div> -->
 
 
+
+  <div class="row">
+    <div class="card card shadow col-3" style="max-width:350px" *ngFor="let songs of song; let i=index;">
+      <img class="card-img-bottom" src= "../{{songs.simage}}"   alt="Card image" style="width:100%">                
+      <div class="card-body">
+        <h4 class="card-title">{{songs.title}}</h4>
+        <p class="card-text" style= "font-weight: bold;">{{songs.artist}} </p>
+        <p class="card-text">{{songs.album}}</p>
+        <p class="card-text">{{songs.slength}} min <span (click)="delete(songs._id)" class=" bi bi-trash px-5 "></span></p>          
+      </div>
+    </div>
+  </div>
+
+
+
 <!-- <div *ngIf="!deleted" class="container"> -->
-<div class="card-columns">
+<!-- <div class="card-columns">
     <div class="container d-flex flex-wrap align-items-center"> <!--anordnung!-->
-            <div class="card shadow" style="width:350px" *ngFor="let songs of song; let i=index;">
-                <!-- JavaScript code -->
+            <!-- <div class="card shadow" style="width:350px" *ngFor="let songs of song; let i=index;">
                 <img class="card-img-bottom" src= "../{{songs.simage}}"   alt="Card image" style="width:100%">                
                 <div class="card-body">
                   <h4 class="card-title">{{songs.title}}</h4>
@@ -49,7 +63,7 @@
                 </div>
               </div>
             </div>
-        </div>
+        </div> -->
 
 <!-- <div class="card-colums">
     <div class="container d-flex flex-wrap ">

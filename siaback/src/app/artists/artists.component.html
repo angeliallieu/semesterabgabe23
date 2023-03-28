@@ -1,16 +1,20 @@
 
-<div class="card-columns">
-    <div class="container d-flex flex-wrap align-items-center "> <!--anordnung!-->
-        <div></div>
-            <div class="card shadow" style="width:350px" 
-            
-            *ngFor="let songs of uniqueSet(); let i=index;">
-                <!-- JavaScript code -->
-                <script> let kuenstler = new Set()</script>
+<div class="row ">
+    <div class="card card shadow col-3" style="max-width:350px" *ngFor="let songs of uniqueSet(); let i=index;">
+        <img class="card-img-bottom" src= "..\assets\cover\artistdefault.jpeg"   alt="Card image" style="width:100%">                
+        <h4 class="card-title">{{songs}}</h4>                
+        <div class="card-body"></div>
+    </div>
+</div>
+
+<!-- <div class="card-columns">
+    <div class="container d-flex flex-wrap align-items-center "> 
+            <div class="card shadow" style="width:350px" *ngFor="let songs of uniqueSet(); let i=index;">
+                <!-- <script> let kuenstler = new Set()</script> 
                 <img class="card-img-bottom" src= "..\assets\cover\artistdefault.jpeg"   alt="Card image" style="width:100%">                
                 <h4 class="card-title">{{songs}}</h4>
                 <div class="card-body">
                 </div>
               </div>
             </div>
-        </div>
+        </div> -->
