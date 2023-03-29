@@ -14,6 +14,9 @@ import { CreateComponent } from './create/create.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ArtistsComponent } from './artists/artists.component';
 import { AlbenComponent } from './alben/alben.component';
+import {MatSidenavModule} from '@angular/material/sidenav'
+import {MatToolbarModule} from '@angular/material/toolbar'
+
 
 const routes: Routes = []
 
@@ -34,7 +37,8 @@ const routes: Routes = []
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-
+    MatSidenavModule,
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -4,7 +4,11 @@
     border: 20 px;
     /* color: antiquewhite;
     background-color: #09123f; */
-} 
+    }
+    
+    .createbox{
+        background-color: white;
+    }
 
     legend{
         color: #09123f;

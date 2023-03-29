@@ -1,6 +1,27 @@
 * {
   font-family: 'Gill Sans', 'Gll Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
+  background-color: #09123f;
+}
+
+.content{
+
+  margin:0px;
+  padding: 0px;
+  background-color: #09123f;
+  height: contain-intrinsic-height;
+}
+
+mat-sidenav{
+  height: 100%;
+  top: 0; /* Stay at the top */
+  padding: 15px;
+  margin:0;
+  background-color:#09123f;
+}
+
+mat-sidenav-container{
+  min-height: 100vh;
+  max-height: 100%;
 }
 
 #page {
