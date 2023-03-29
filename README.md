@@ -42,7 +42,8 @@ console.log("Hello Kpamanah")
 ```json
 {name: String}
 ```
-
+<img src="../siaback/src/assets/cover/confetti.jpg" alt="Alt text" title="Optional title">
+<img src="siaback/src/assets/cover/confetti.jpg" alt="Alt text" title="Optional title">
 ![alt text]("siaback\src\assets\cover\confetti.jpg")
 
 
