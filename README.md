@@ -13,7 +13,7 @@ Für das **Frontend** erfolgt im Terminal die Eingabe:
 ng serve
 ```
 
-Erfolgreiche ist dies wenn folgende **Ausgabe** erfolgt:
+Erfolgreich ist dies wenn folgende **Ausgabe** erfolgt:
 ```ts
 console.log("Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ √ Compiled successfully.")
 ```
