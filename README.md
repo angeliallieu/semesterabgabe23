@@ -7,7 +7,12 @@ Meine Anwendung **Siamusic** stellt eine Musiksammlung dar und wurde Mithilfe vo
 **Backend**: siamusicbackend <br>
 **Frontend**: siaback <br>
 
-Der **Backend**- und der **Frontend**-Ordner müssen jeweils im eigenen Terminals (am besten über GitBash) geöffnet werden. 
+Das Repository sollte als lokale Kopie auf dem Computer gespeichert werden. Die kann man mit **Git Clone** machen. Dafür öffnet man die Git-Bash an dem Ort wo man das Repository speichern möchte und gibt dort folgenden Befehl an:
+```cmd
+git clone https://github.com/angeliallieu/semesterabgabe23
+```
+
+Der **Backend**- und der **Frontend**-Ordner müssen dann jeweils im eigenen Terminals (am besten über GitBash) geöffnet werden. 
 Für das **Frontend** erfolgt im Terminal die Eingabe: 
 ```cmd
 ng serve
