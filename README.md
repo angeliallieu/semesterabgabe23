@@ -31,7 +31,7 @@ Wenn beide Terminals laufen, kann man die Seite über *http://localhost:4200/* e
 
 ## Screenshots von der Anwendung
 # 
-<img src="siaback/src/assets/appbilder/bild1.png" alt="Startseite" title="Startseite">
+<img src="../siaback/src/assets/appbilder/bild1.png" alt="Startseite" title="Startseite">
 
 
 
