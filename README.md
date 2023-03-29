@@ -30,19 +30,19 @@ Wenn beide Terminals laufen, kann man die Seite über *http://localhost:4200/* e
 
 
 ## Screenshots von der Anwendung
-Startseite
+**Startseite**
 <img src="/siaback/src/assets/appbilder/Bild1.png" alt="Startseite" title="Startseite">
 
-Startseite weitergescrollt
+**Startseite weitergescrollt**
 <img src="/siaback/src/assets/appbilder/Bild2.png" alt="Startseite2" title="Startseite2">
 
-Neuen Song hinzufügen
+**Neuen Song hinzufügen**
 <img src="/siaback/src/assets/appbilder/Bild3.png" alt="CreateSong" title="CreateSong">
 
-Künstlerseite
+**Künstlerseite**
 <img src="/siaback/src/assets/appbilder/Bild4.png" alt="Künstler" title="Künstler">
 
-Albenseite
+**Albenseite**
 <img src="/siaback/src/assets/appbilder/Bild5.png" alt="Alben" title="Alben">
 
 
