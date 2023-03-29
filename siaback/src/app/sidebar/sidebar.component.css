@@ -14,7 +14,7 @@ li {
     text-decoration: none;
 }
 
-/* Change the link color on hover */
+/* Farbe beim Hovern ändernr */
 li:hover {
     background-color: lightgrey;
     color: white;

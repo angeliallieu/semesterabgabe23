@@ -32,11 +32,11 @@ export class CreateComponent {
 
     // console.log(songs);
 
-    this.bs.postAny(songs).subscribe((result)=>{
-      console.log(result);
+    this.bs.postAny(songs).subscribe((result)=>{ //Body wird erstellt unf gepostet
+      console.log(result); //Ausgabe zur Kontrolle
     })
     this.router.navigateByUrl('/').then(()=>{
-      location.reload();
+      location.reload(); //Seite aktualisieren um Änderung anzuzeigen, aber erst auf die Seite wechsekn
     });
     
   }
