@@ -49,7 +49,7 @@ Wenn beide Terminals laufen, kann man die Seite über *http://localhost:4200/* e
 <img src="/siaback/src/assets/appbilder/Bild5.png" alt="Alben" title="Alben">
 
 
-##Weiterführende Ideen
+## Weiterführende Ideen
 - Datenbanken so verknüpfen, dass man von der Alben-Seite auf die Lieder in dem Alben kommt   
 - Datenbanken so verknüpfen, dass man von der Künstler-Seite auf die Lieder in dem Künstler kommt
 - Suchfunktion implementieren
